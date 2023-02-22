@@ -4,7 +4,7 @@ import W12MHeader from './W12MHeader';
 test('renders header text', () => {
     render(<W12MHeader/>);
     const someHeaderText = screen.getByText(
-        /Each species may only submit ONE W-12-M form./i
+        "Each species may only submit ONE W-12-M form."
     );
     expect(someHeaderText).toBeInTheDocument();
 });
