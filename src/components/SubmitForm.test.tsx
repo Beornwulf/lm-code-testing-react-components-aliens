@@ -1,6 +1,6 @@
-import {fireEvent, render, screen} from "@testing-library/react";
+import {render, screen} from "@testing-library/react";
 import {SubmitForm} from "./SubmitForm";
-const submitForm = require("./SubmitForm")
+require("./SubmitForm");
 
 beforeEach(() => {
     render(<SubmitForm speciesName={"Species Name"}
